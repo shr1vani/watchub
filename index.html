@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WATCHHUB</title>
+    <link rel="stylesheet" href="hub.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@300&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@300&display=swap" rel="stylesheet"p
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.PNG" alt="">
+        </div>
+        <ul>
+            <li class="item"><a href="">Home</a></li>
+            <li class="item"><a href="">OutLog</a></li>
+            <li class="item"><a href="">GiftStore</a></li>
+            <li class="item"><a href="">Contact</a></li>
+            <li class="item"><a href="">Service</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="slides">
+        <img src="slider3.jpg" alt="">
+        <img src="slider1.jpg" alt="">
+        <img src="slider2.jpg" alt="">
+        <img src="slider4.jpg" alt="">
+        <img src="slider5.jpeg" alt="">
+    </div>
+<div class="heading">
+    <strong>Hot-Selling Gadgets</strong>
+</div>
+
+    <div class="grid">
+        <div class="items">
+            <img src="P1.jpeg" alt="">
+            <div class="p">
+                <p> <strong>NoiseFit Force</strong>
+                    <br>
+                    BT Calling|Sporty Design <br>
+                    $1,000
+                </p>
+            </div>
+        </div>
+        <div class="items">
+            <img src="P2.jpeg" alt="">
+            <div class="p">
+                <p>NoiseFit Force</p>
+            </div>
+        </div>
+        <div class="items">
+            <img src="P3.jpeg" alt="">
+            <div class="p">
+                <p>NoiseFit Force</p>
+            </div>
+        </div>
+        <div class="items">
+            <img src="P4.jpeg" alt="">
+            <div class="p">
+                <p>NoiseFit Force</p>
+            </div>
+        </div>
+        <div class="items">
+            <img src="P5.jpeg" alt="">
+            <div class="p">
+                <p>NoiseFit Force</p>
+            </div>
+        </div>
+        <div class="items">
+            <img src="P6.jpeg" alt="">
+            <div class="p">
+                <p>NoiseFit Force</p>
+            </div>
+        </div>
+        <div class="items">
+            <img src="P7.jpeg" alt="">
+            <div class="p">
+                <p>NoiseFit Force</p>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="pro">
+        <p>NoiseFit Force</p>
+        <p>NoiseFit Force</p>
+        <p>NoiseFit Force</p>
+        <p>NoiseFit Force</p>
+        <p>NoiseFit Force</p>
+        <p>NoiseFit Force</p>
+        <p>NoiseFit Force</p>
+    </div> -->
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slides img');
+        const totalSlides = slides.length;
+
+        function showSlides() {
+            slides.forEach((slide) => {
+                slide.style.display = 'none';
+            });
+            slides[slideIndex].style.display = 'block';
+        }
+
+        function nextSlide() {
+            if (slideIndex === totalSlides - 1) {
+                slideIndex = 0;
+            } else {
+                slideIndex++;
+            }
+            showSlides();
+        }
+        showSlides(); // Show the first slide initially
+
+        // Automatic slideshow
+        setInterval(nextSlide, 5000); // Change slide every 5 seconds
+
+    </script>
+</body>
+
+</html>
