@@ -60,26 +60,29 @@
     color: black; */
     color: rgb(255, 255, 0);
     transition: 0.9s;
-} 
-#navbar ul li a:after{
+}
+
+#navbar ul li a:after {
     content: '';
     position: absolute;
     left: 50%;
     bottom: 0;
     transform: translateX(-50%) scaleX(0);
     -webkit-transform: translateX(-50%) scaleX(0);
-     -webkit-transform-origin: 50% 50%;
-     transform-origin: 50% 50%;
-     width: 100%;
-     height: 2px;
-     background-color: rgba(255,255,255,0.9);
-     -webkit-transition: transform 250ms;
-     transition: transform 250ms;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-transition: transform 250ms;
+    transition: transform 250ms;
 }
-#navbar ul li a:hover:after{
+
+#navbar ul li a:hover:after {
     -webkit-transform: translateX(-50%) scaleX(1);
     transform: translateX(-50%) scaleX(1);
 }
+
 .slider {
     display: flex;
 }
@@ -94,12 +97,14 @@
     z-index: -1;
     opacity: 0.5;
 }
-.slides img{
+
+.slides img {
     width: 100%;
     height: 100%;
 }
 
-.grid{
+.grid {
+    border: 1px solid gray;
     display: grid;
     align-items: center;
     grid-auto-flow: column;
@@ -108,31 +113,104 @@
     grid-template-rows: unset; */
     overflow: scroll;
     grid-template-columns: 402px 401px 402px 402px 401px 402px 402px;
-    background-color: rgb(251 242 242);
-    gap: 50px 100px;
+    /* background-color: rgb(251 242 242); */
+    /* gap: 50px 100px; */
     padding: 10px;
 }
-.items{
-    border-radius: 20px;
+
+.items {
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+
 }
-.heading{
+
+.items img {
+    border: 1px solid gray;
+}
+
+.heading {
     font-family: 'Archivo Black', sans-serif;
     font-size: 35px;
     font-weight: 700;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     padding: 23px;
     margin-top: 12px;
 }
-.p{
-    font-weight: 600;
+
+.title {
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 16px;
+    border: 1px solid gray;
+}
+
+.price {
+    width: 100%;
+    border: 1px solid gray;
+    padding: 16px;
+}
+
+.p {
+    position: relative;
+    font-weight: 600px;
     font-size: 25px;
     line-height: 37px;
     color: rgb(0, 0, 0);
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap;
     margin: 0px;
-    padding: 18px;
-    width: 461px;
-    border: 1px solid rgb(143, 143, 143);
+    width: 100%;
+
 }
+
+.company {
+    height: 200px;
+    width: 200px;
+ 
+
+}
+
+.logo {
+    flex-wrap: wrap;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+.company img{
+   height: 200px;
+   width: 200px;
+}
+
+/* #logo1 {
+    background-image: url('noise.png');
+}
+
+#logo2 {
+    background-image: url('https://marksmendaily.com/wp-content/uploads/2023/02/Abhishek-MPL-3.png');
+}
+
+#logo3 {
+    background-image: url("https://download.logo.wine/logo/Redmi/Redmi-Logo.wine.png");
+}
+
+#logo4 {
+    background-image: url("https://download.logo.wine/logo/Redmi/Redmi-Logo.wine.png");
+}
+
+#logo5 {
+    background-image: url("https://download.logo.wine/logo/Redmi/Redmi-Logo.wine.png");
+}
+
+#logo6 {
+    background-image: url("https://download.logo.wine/logo/Redmi/Redmi-Logo.wine.png");
+}
+
+#logo7 {
+    background-image: url("https://download.logo.wine/logo/Redmi/Redmi-Logo.wine.png");
+}
+
+#logo1,#logo2,#logo3,#logo4,#logo5,#logo6,#logo7{
+    background-size: cover;
+    
+} */
