@@ -46,6 +46,7 @@
 }
 
 #navbar ul li a {
+    text-decoration: none;
     position: relative;
     display: block;
     color: white;
@@ -179,14 +180,28 @@
     justify-content: space-around;
     
 }
-/* #logo2{
+#logo2{
    
     height: fit-content;
     
-} */
+}
 .company img{
    height: inherit;
    width: inherit;
+}
+/* for support webpage */
+.support_page_logo{
+    flex-wrap: wrap;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#logo_2{
+   
+    height: fit-content;
+    
 }
 .support_features{
     display: flex;
