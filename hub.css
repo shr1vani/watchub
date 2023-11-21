@@ -50,8 +50,8 @@
     position: relative;
     display: block;
     color: white;
-    padding: 9px 82px;
-    border-radius: 20px;
+    padding: 9px 72px;
+    /* border-radius: 20px; */
     text-decoration: none;
 }
 
