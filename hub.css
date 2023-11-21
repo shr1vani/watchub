@@ -167,8 +167,8 @@
 }
 
 .company {
-    height: 200px;
-    width: 200px;
+   height: 222px;
+    width: 350px;
     margin-top: 50px;
 
 }
@@ -186,18 +186,22 @@
    width: inherit;
 }
 /* for support webpage */
-.support_page_logo{
-    flex-wrap: wrap;
+.support_company{
     height: 200px;
-    display: flex;
-    justify-content: space-around;
+    width: 350px;
+    margin-top: 50px;
+
 }
-
-
-#logo_2{
-   
+.support_company img{
+    height: inherit;
+    width: inherit;
+ }
+.support_page_logo{
+    display: flex;
+    flex-wrap: wrap;
+ 
+    justify-content: space-around;
     height: fit-content;
-    
 }
 .support_features{
     display: flex;
