@@ -167,7 +167,7 @@
 }
 
 .company {
-   height: 222px;
+   height: 200px;
     width: 350px;
     margin-top: 50px;
 
@@ -187,64 +187,47 @@
 }
 /* for support webpage */
 .support_company{
-    height: 200px;
+    height: 280px;
     width: 350px;
     margin-top: 50px;
-
+    
 }
 .support_company img{
     height: inherit;
     width: inherit;
- }
+}
 .support_page_logo{
     display: flex;
     flex-wrap: wrap;
- 
     justify-content: space-around;
     height: fit-content;
 }
+.body1{
+    margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+    
+}
 .support_features{
     display: flex;
-    align-items: center;
-justify-content: space-around;
-}
-.items_of_support{
-    border:2px solid black;
-    flex-direction: column;
-}
-/* #logo6{
-    width: 50px;
-    height: 50px;
-} */
-/* #logo1 {
-    background-image: url('noise.png');
-}
-
-#logo2 {
-    background-image: url('https://marksmendaily.com/wp-content/uploads/2023/02/Abhishek-MPL-3.png');
-}
-
-#logo3 {
-    background-image: url("https://download.logo.wine/logo/Redmi/Redmi-Logo.wine.png");
-}
-
-#logo4 {
-    background-image: url("https://download.logo.wine/logo/Redmi/Redmi-Logo.wine.png");
-}
-
-#logo5 {
-    background-image: url("https://download.logo.wine/logo/Redmi/Redmi-Logo.wine.png");
-}
-
-#logo6 {
-    background-image: url("https://download.logo.wine/logo/Redmi/Redmi-Logo.wine.png");
-}
-
-#logo7 {
-    background-image: url("https://download.logo.wine/logo/Redmi/Redmi-Logo.wine.png");
-}
-
-#logo1,#logo2,#logo3,#logo4,#logo5,#logo6,#logo7{
-    background-size: cover;
+    justify-content: space-around;
     
-} */
+}
+.items_of_support {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border:1px solid black;
+    width: 400px;
+    height: 200px;
+    margin: 0 10px;
+    background-color: #2863e2;
+    border-radius: 25px;
+  }
+.items_of_support img{
+    display: block;
+    flex-direction: row;
+    width: 100px;
+} 
