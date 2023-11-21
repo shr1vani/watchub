@@ -51,8 +51,7 @@
     display: block;
     color: white;
     padding: 9px 72px;
-    /* border-radius: 20px; */
-    text-decoration: none;
+    
 }
 
 #navbar ul li a:hover {
@@ -176,13 +175,28 @@
 
 .logo {
     flex-wrap: wrap;
-    height: 500px;
+    height: 200px;
     display: flex;
     justify-content: space-around;
+    
+}
+#logo2{
+   
+    height: fit-content;
+    
 }
 .company img{
-   height: 200px;
-   width: 200px;
+   height: inherit;
+   width: inherit;
+}
+.support_features{
+    display: flex;
+    align-items: center;
+justify-content: space-around;
+}
+.items_of_support{
+    border:2px solid black;
+    flex-direction: column;
 }
 /* #logo6{
     width: 50px;
