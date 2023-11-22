@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: large;
+}
+
+#logo {
+    margin: 0px 70px;
+}
+
+#logo img {
+    height: 102px;
+    margin: 0px 1px;
+    /* filter: invert(); */
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    transform: translateX(-50% -50%);
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: " ";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.9; */
+
+}
+
+#navbar ul li {
+    list-style: none;
+    
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    position: relative;
+    display: block;
+    color: white;
+    padding: 9px 72px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    /* background-color: white;
+    color: black; */
+    color: rgb(255, 255, 0);
+    transition: 0.9s;
+}
+
+#navbar ul li a:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0);
+    -webkit-transform: translateX(-50%) scaleX(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-transition: transform 250ms;
+    transition: transform 250ms;
+}
+
+#navbar ul li a:hover:after {
+    -webkit-transform: translateX(-50%) scaleX(1);
+    transform: translateX(-50%) scaleX(1);
+}
+
+.slider {
+    display: flex;
+}
+
+/* .slider img {
+    height: 100%;
+    width: 100%;
+} */
+.slider::before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+}
+
+.grid {
+    border: 1px solid gray;
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    /* grid-auto-rows: 25%; */
+    /* grid-template-columns: unset;
+    grid-template-rows: unset; */
+    overflow: scroll;
+    grid-template-columns: 402px 401px 402px 402px 401px 402px 402px;
+    /* background-color: rgb(251 242 242); */
+    /* gap: 50px 100px; */
+    padding: 10px;
+}
+
+.grid::-webkit-scrollbar {
+    display: none;
+}
+
+.items {
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.items img {
+    border: 1px solid gray;
+}
+
+.heading {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    /* border: 1px solid gray; */
+    padding: 23px;
+    margin-top: 12px;
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 16px;
+    border: 1px solid gray;
+}
+
+.price {
+    width: 100%;
+    border: 1px solid gray;
+    padding: 16px;
+}
+
+.p {
+    position: relative;
+    font-weight: 600px;
+    font-size: 25px;
+    line-height: 37px;
+    color: rgb(0, 0, 0);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0px;
+    width: 100%;
+
+}
+
+.company {
+    height: 200px;
+    width: 200px;
+    margin-top: 50px;
+
+}
+
+.logo {
+    flex-wrap: wrap;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/* #logo2{
+   
+    height: fit-content;
+    
+} */
+.company img {
+    height: inherit;
+    width: inherit;
+}
+
+h1{
+    margin-top: 55px;
+    text-align: center;
+    font-size: 35px;
+}
+.now{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 37px;
+    /* height: 100vh; */
+}
+.shop{
+    font-family: system-ui, -apple-system, Roboto;
+    font-size: 10px;
+    width: 160px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rga(0,0,0,0.1);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform
+}
+.shop:hover, .shop:focus{
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.support_features {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.items_of_support {
+    border: 2px solid black;
+    flex-direction: column;
+}
+
+/* #logo6{
+    width: 50px;
+    height: 50px;
+} */
+/* #logo1 {
+    background-image: url('noise.png');
+}
+
+#logo2 {
+    background-image: url('https://marksmendaily.com/wp-content/uploads/2023/02/Abhishek-MPL-3.png');
+}
+
+#logo3 {
+    background-image: url("https://download.logo.wine/logo/Redmi/Redmi-Logo.wine.png");
+}
+
+#logo4 {
+    background-image: url("https://download.logo.wine/logo/Redmi/Redmi-Logo.wine.png");
+}
+
+#logo5 {
+    background-image: url("https://download.logo.wine/logo/Redmi/Redmi-Logo.wine.png");
+}
+
+#logo6 {
+    background-image: url("https://download.logo.wine/logo/Redmi/Redmi-Logo.wine.png");
+}
+
+#logo7 {
+    background-image: url("https://download.logo.wine/logo/Redmi/Redmi-Logo.wine.png");
+}
+
+#logo1,#logo2,#logo3,#logo4,#logo5,#logo6,#logo7{
+    background-size: cover;
+    
+} */
